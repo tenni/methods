@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="applicable-device" content="pc" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <base target="_blank" />
+    
+    <style>
+    	body{
+    		width:100%;
+    	}
+    	.btns{
+    		display: flex;
+    		width:100px;
+    	}
+    	.btn{
+    		flex:1;
+    		border: 1px solid black;
+    		text-align:center;
+    	}
+    </style>
+    <script>
+	var myObj = {
+
+	    specialFunction: function() {
+	    	console.log(333)
+	    },
+	    getAsyncData: function(cb) {
+	        cb();
+	    },
+
+	    render: function () {
+            this.getAsyncData(function () {
+
+                this.specialFunction();
+
+            }.bind(this));
+
+        }
+	};
+	myObj.render();
+	</script>
+</head>
+
+<body>
+    <div class="btns">
+    	<div class="btn">哈哈</div>
+    	<div class="btn">哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="applicable-device" content="pc" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title></title>
+	<meta name="keywords" content="" />
+  	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+</head>
+<body>
+	<div class="header"></div>
+	<div class="mainbody"></div>
+	<div class="footer"></div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/poster.js"></script>
+	
+	<script>
+		var msg ='{"name":"ct","age":29}'//JSON 字符串
+		var dataObj=eval("("+msg+")");//转换为json对象
+		console.log(dataObj)
+
+		var msg2={name:"ct",age:30}
+		var json = JSON.stringify(msg2)//转换为JSON 字符串
+		console.log(json)
+
+		var obj = JSON.parse(msg)//转换为json对象
+		console.log(obj)
+
+		var result2 = $.parseJSON(msg); //转换为json对象
+		console.log( result2 );
+	</script>
+</body>
+</html>
